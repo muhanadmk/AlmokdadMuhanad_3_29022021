@@ -1,0 +1,59 @@
+// header-page-Accueil
+
+.header{
+    background-color: $Primaire-color;
+    text-align: center;
+    padding-bottom: 30px;
+    &__logo{ background-color:#ffffff ;
+        &__image{
+            width: 166px;
+        }
+    }
+    &__localisation{
+        background-color: darken($Primaire-color, 10%);
+        padding: 15px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    &__heading{
+        font-family: "Shrikhand";
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__byline{
+        margin-bottom: 40px;
+    }
+    &__btn{
+        border: 1px solid $btn-color;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: $btn-color;
+        color: blanchedalmond;
+    }
+}
+
+// les-btn-de-Fonctionnement
+.FoncBtn{
+    width: 325px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid $Primaire-color;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: $Primaire-color;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    &__number{
+        border: 5px solid $btn-color;
+        border-radius: 50px;
+        padding: 2px;
+        background-color: $btn-color;
+    }
+}
+
+.blocResto{
+    width: 335px;
+    margin: 0 auto;
+}
+

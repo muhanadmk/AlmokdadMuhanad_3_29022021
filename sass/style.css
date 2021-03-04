@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.blocResto__image {
+  width: 335px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.header__logo {
+  background-color: #ffffff;
+}
+
+.header__logo__image {
+  width: 166px;
+}
+
+.header__localisation {
+  background-color: #dddddd;
+  padding: 15px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header__heading {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.header__byline {
+  margin-bottom: 40px;
+}
+
+.header__btn {
+  border: 1px solid #9356DC;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #9356DC;
+  color: blanchedalmond;
+}
+
+.FoncBtn {
+  width: 325px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #f6f6f6;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.FoncBtn__number {
+  border: 5px solid #9356DC;
+  border-radius: 50px;
+  padding: 2px;
+  background-color: #9356DC;
+}
+
+.blocResto {
+  width: 335px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.blocResto__image {
+  width: 335px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+/* tout les link */
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #353535;
+  padding-left: 25px;
+}
+
+.footer__heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
