@@ -12,76 +12,103 @@
 </head>
 <body>
     <div class="hedMmenu">
-        <div class="hedMmenu__icon"><i class="fas fa-arrow-left"></i></div>
-        <img class="hedMmenu-logo" src="images/logo/ohmyfood.png" alt="logo">
+        <a href="index.html" class="hedMmenu__icon"><i class="fas fa-arrow-left"></i></a>
+        <img class="hedMmenu__logo" src="images/logo/ohmyfood.png" alt="logo">
     </div>
-    <img class="blocResto__image" src='http://fakeimg.pl/375x250?font=lobster' alt=''/>
-
+    <img class="image" src='images/restaurants/3.jpg' alt=''/>
+    <div class="hedBlock">
+        <h1 class="hedBlock__hed">La palette du goût</h1>
+        <i class="far fa-heart hedBlock__like"></i>
+    </div>
     <!-- les repas et les demandes -->
-    <div class="demandes">
-        <h1 class="demandes__heading">La palette du goût hart</h1>*
-        <!-- ENTRÉES -->
+    <section>
         <div class="repas">
-            <h4 class="liste__heading">ENTRÉES</h4>
-            <div class="liste">
-                <p class="liste__titre">Fricassée d'escargot</p>
-                <p class="liste__byline">Au pimet d'espelette</p>
-                <p class="liste__prix">25€</p>
+            <!-- ENTRÉES -->
+            <div class="repas__block">
+                <h4 class="repas__heading repas__heading--padTop">ENTRÉES</h4>
+                <div class="repas__liste">
+                    <p class="repas__titre">Fricassée d'escargot</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Au pimet d'espelette</p>
+                        <p class="repas__prix">25€</p>
+                    </div>    
+                </div>
+                <div class="repas__liste">
+                    <p class="repas__titre">Fois gras de canard mi-cuit</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">et ses copeaux de truffe noire</p>
+                        <p class="repas__prix">35€</p>
+                    </div>
+                </div>
+                <div class="repas__liste">
+                    <p class="repas__titre">Oeuf au plat</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Assaisonné à la truffe sur lit de...</p>
+                        <p class="repas__prix">20€</p>
+                    </div>    
+                </div>
             </div>    
-            <div class="liste">
-                <p class="liste__titre">Fois gras de canard mi-cuit</p>
-                <p class="liste__byline">et ses copeaux de truffe noire</p>
-                <p class="liste__prix">35€</p>
+                <!-- plate -->
+            <div class="repas__block">    
+                <h4 class="repas__heading">PLATS</h4>
+                <div class="repas__liste">
+                    <p class="repas__titre">Filet de bœuf aux herbes</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Accompagné de sa ribambelle de légu...</p>
+                        <p class="repas__prix">40€</p>
+                    </div>
+                </div>    
+                <div class="repas__liste">
+                    <p class="repas__titre">Parmentier de queue de boeuf</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">À la truffe noire sur sa purée de panais</p>
+                        <p class="repas__prix">35€</p>
+                    </div>    
+                </div>
+                <div class="repas__liste">
+                    <p class="repas__titre">Filet de Turbot</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Aux agrumes</p>
+                        <p class="repas__prix">44€</p>
+                    </div>    
+                </div>
             </div>
-            <div class="liste">
-                <p class="liste__titre">Oeuf au plat</p>
-                <p class="liste__byline">Assaisonné à la truffe sur lit de...</p>
-                <p class="liste__prix">20€</p>
+            <div class="repas__block">        
+                <!-- Dessert   -->
+                <h4 class="repas__heading">DESSERT</h4>
+                <div class="repas__liste"> 
+                    <p class="repas__titre">Paris-Brest </p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Revisité</p>
+                        <p class="repas__prix">18€</p>
+                    </div>
+                </div>    
+                <div class="repas__liste">
+                    <p class="repas__titre">Macaron au chocolat d'exception</p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Et glace à la vanille de Madagascar</p>
+                        <p class="repas__prix">22€</p>
+                    </div>    
+                </div>
+                <div class="repas__liste">
+                    <p class="repas__titre">Mousse au chocolat </p>
+                    <div class="repas__line">
+                        <p class="repas__byline">Au piment d'espelette et à la truffe noire</p>
+                        <p class="repas__prix">23€</p>
+                    </div>    
+                </div>                  
             </div>
-
-            <!-- plate -->
-            <h4 class="repas__heading">Plats</h4>
-            <div class="liste">
-                <p class="liste__titre">Filet de bœuf aux herbes</p>
-                <p class="liste__byline">Accompagné de sa ribambelle de légu...</p>
-                <p class="liste__prix">40€</p>
-            </div>    
-            <div class="liste">
-                <p class="liste__titre">Parmentier de queue de boeuf</p>
-                <p class="liste__byline">À la truffe noire sur sa purée de panais</p>
-                <p class="liste__prix">35€</p>
-            </div>
-            <div class="liste">
-                <p class="liste__titre">Filet de Turbot</p>
-                <p class="liste__byline">Aux agrumes</p>
-                <p class="liste__prix">44€</p>
-            </div>    
-            <!-- Dessert   -->
-            <h4 class="repas__heading">Dessert</h4>
-            <div class="liste"> 
-                <p class="liste__titre">Paris-Brest </p>
-                <p class="liste__byline">Revisité</p>
-                <p class="liste__prix">18€</p>
-            </div>    
-            <div class="liste">
-                <p class="liste__titre">Macaron au chocolat d'exception</p>
-                <p class="liste__byline">Et glace à la vanille de Madagascar</p>
-                <p class="liste__prix">22€</p>
-            </div>
-            <div class="liste">
-                <p class="liste__titre">Mousse au chocolat </p>
-                <p class="liste__byline">Au piment d'espelette et à la truffe noire</p>
-                <p class="liste__prix">23€</p>
-            </div>
-        <a href="#" class="demandes__btn">commander</a>                  
+            <a href="#" class="repas__btn">commander</a>
+        </div>
+    </section>    
+    <div class="footer">
+        <div class="footer__block">
+            <p class="footer__heading">ohmyfood</p>
+            <p><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping footer__icon"></i>Devenir Partenaire</p>
+            <p class="footer__byline">Mentions légales</p>
+            <p><a href="mailto:mouhandmk1@gmail.com" class="footer__contact" >Contact</a></p>
         </div>
     </div>
-    <footer>
-        <p class="footer__heading">ohmyfood</p>
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>Devenir Partenaire</p>
-        <p>Mentions légales</p>
-        <p><a href="mailto:mouhandmk1@gmail.com">Contact</a></p>
-    </footer>
 </body>
 </html>

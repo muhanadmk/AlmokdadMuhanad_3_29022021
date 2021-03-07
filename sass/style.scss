@@ -1,34 +1,12 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/Fonctions";
 @import "./base";
 @import "./layouts";
 @import "./page";
-@import "./utils/Fonctions";
+@import "./components";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
 
-.blocResto__image{
-    width: 335px;
-    height: 175px;
-    object-fit: cover;
-    margin: 0 auto;
-}
 
-/* tout les link */
-a{
-    text-decoration: none;
-}
- .footer{
-    background-color: #353535;
-    padding-left: 25px; 
-    &__heading{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-     
- }
+
 

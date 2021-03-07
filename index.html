@@ -35,21 +35,21 @@
     <!-- fini-header -->
     
     <!-- start-Fonctionnement -->
-    <div class="Fonctionnement">
+    <div class="FoncBtn">
         <h3>Fonctionnement</h3>
-        <div class="FoncBtn">
+        <div class="FoncBtn__block">
             <p class="FoncBtn__number">1</p>
             <div class="FoncBtn__icon"><i class="fas fa-mobile-alt"></i></div>
             <a href="FoncBtn__titre">Choisissez un restaurant</a>
         </div>
-        <div class="FoncBtn">
+        <div class="FoncBtn__block">
             <p class="FoncBtn__number">2</p>
             <div class="FoncBtn__icon"><i class="fas fa-list-ul"></i></div>
             <a href="FoncBtn__titre">Composez votre menu</a>
         </div>
-        <div class="FoncBtn">
+        <div class="FoncBtn__block">
             <p class="FoncBtn__number">3</p>
-            <div class="FoncBtn__icon"><i class="fas fa-store"></i></div>
+            <div class="FoncBtn__icon FoncBtn__icon--color"><i class="fas fa-store"></i></div>
             <a href="FoncBtn__titre">Dégustez au restaurant</a>
         </div>
     </div>
@@ -57,43 +57,72 @@
 
     <!-- start-resto -->
     <div class="resto">
-        <h3>Restaurant</h3>
-        <!-- carte-de-resto -->
-        <a href="gout.html" class="blocResto">
-            <img class="blocResto__image" src='images/restaurants/1.jpg' alt=''/>
-            <p class="blocResto__heading">La plate du goût</p>
-            <p class="blocResto__byline">ménilmontant</p>
-            <div class="blocResto__icon"><i class="far fa-heart"></i></div>
-            <p class="blocResto__Nouveau">Nouveau</p>
-        </a>
-        <a href="note.html" class="blocResto">
-            <img class="blocResto__image" src='images/restaurants/2.jpg' alt=''/>
-            <p class="blocResto__heading">La note enchanté</p>
-            <p class="blocResto__byline">Charonne</p>
-            <div class="blocResto__icon"><i class="far fa-heart"></i></div>
-            <p class="blocResto__Nouveau">Nouveau</p>
-        </a>
-        <a href="française.html" class="blocResto">
-            <img class="blocResto__image" src='images/restaurants/3.jpg' alt=''/>
-            <p class="blocResto__heading">À la française</p>
-            <p class="blocResto__byline">Cité Rouge</p>
-            <div class="blocResto__icon"><i class="far fa-heart"></i></div>
-        </a>
-        <a href="déclic.html" class="blocResto">
-            <img class="blocResto__image" src='images/restaurants/4.jpg' alt=''/>
-            <p class="blocResto__heading">Le déclic des sens</p>
-            <p class="blocResto__byline">Folie-Méricourt</p>
-            <div class="blocResto__icon"><i class="far fa-heart"></i></div>
-        </a>
-        <!-- fine-carte-de-rseto -->
-    </div>
+        <div class="resto__block">
+            <h3 class="resto__titre" >Restaurant</h3>
+            <!-- carte-de-resto -->
+            <!-- <a href="gout.html"  -->
+            <a href="gout.html" class="resto__link">    
+                <div class="resto__card">  
+                    <img class="resto__image" src='images/restaurants/1.jpg' alt=''/>
+                    <div class="resto__border">  
+                        <div class="resto__text">  
+                            <p class="resto__heading">La plate du goût</p>
+                            <p class="resto__byline">ménilmontant</p>
+                            <p class="resto__Nouveau">Nouveau</p>
+                        </div>
+                        <div class="resto__icon"><i class="far fa-heart"></i></div> 
+                    </div>
+                </div>
+            </a>    
+            <a href="note.html" class="resto__link">
+                <div class="resto__card">  
+                    <img class="resto__image" src='images/restaurants/2.jpg' alt=''/>
+                    <div class="resto__border">  
+                        <div class="resto__text">  
+                            <p class="resto__heading">La note enchantée</p>
+                            <p class="resto__byline">Charonne</p>
+                            <p class="resto__Nouveau">Nouveau</p>
+                        </div>
+                        <div class="resto__icon"><i class="far fa-heart"></i></div> 
+                    </div>
+                </div>
+            </a>
+            <a href="française.html" class="resto__link">    
+                <div class="resto__card">  
+                    <img class="resto__image" src='images/restaurants/3.jpg' alt=''/>
+                    <div class="resto__border">  
+                        <div class="resto__text">  
+                            <p class="resto__heading">À la française</p>
+                            <p class="resto__byline">Cité Rouge</p>
+                        </div>
+                        <div class="resto__icon"><i class="far fa-heart"></i></div> 
+                    </div>
+                </div>
+            </a>
+            <a href="déclic.html" class="resto__link">
+                <div class="resto__card">  
+                    <img class="resto__image" src='images/restaurants/4.jpg' alt=''/>
+                    <div class="resto__border">  
+                        <div class="resto__text">  
+                            <p class="resto__heading">Le déclic des sens</p>
+                            <p class="resto__byline">Folie-Méricourt</p>
+                        </div>
+                        <div class="resto__icon"><i class="far fa-heart"></i></div> 
+                    </div>
+                </div>
+            </a>
+            <!-- fine-carte-de-rseto -->
+        </div>
+    </div>    
     <!-- fini-resto -->
     <div class="footer">
-        <p class="footer__heading">ohmyfood</p>
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>Devenir Partenaire</p>
-        <p>Mentions légales</p>
-        <p><a href="mailto:mouhandmk1@gmail.com">Contact</a></p>
+        <div class="footer__block">
+            <p class="footer__heading">ohmyfood</p>
+            <p><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping footer__icon"></i>Devenir Partenaire</p>
+            <p class="footer__byline">Mentions légales</p>
+            <p><a href="mailto:mouhandmk1@gmail.com" class="footer__contact" >Contact</a></p>
+        </div>
     </div>
 </body>
 </html>
