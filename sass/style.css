@@ -6,45 +6,171 @@
   font-family: "Roboto", sans-serif;
 }
 
-.blocResto__image {
+/* tout les link */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer__block {
   width: 335px;
-  height: 175px;
+  margin: 0 auto;
+  color: #fff;
+}
+.footer__heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Shrikhand";
+}
+.footer__byline {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer__contact {
+  margin-top: 10px;
+  color: #fff;
+}
+.footer__icon {
+  margin-top: 10px;
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+.hedMmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.hedMmenu__logo {
+  width: 175px;
+  height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0 auto;
+}
+.hedMmenu__icon {
+  font-size: 20px;
+}
+
+.image {
+  width: 375px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.hedBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 300px;
+  border: 1px solid #f6f6f6;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  padding: 17px 0px 11px 15px;
+}
+.hedBlock__hed {
+  font-family: "Shrikhand";
+  font-size: 25px;
+}
+.hedBlock__like {
+  font-size: 24px;
+  padding: 0px 41px 0px 60px;
+}
+
+section {
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+}
+
+.repas {
+  width: 350px;
+  margin: 0 auto;
+}
+.repas__liste {
+  width: 345px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.repas__heading {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.repas__heading--padTop {
+  padding-top: 40px;
+}
+.repas__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.repas__titre {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.repas__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 195px;
+  margin: 0 auto;
+  border: 1px solid #9356DC;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #9356DC;
+  color: blanchedalmond;
+  font-weight: bold;
 }
 
 .header {
   background-color: #f6f6f6;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
-
 .header__logo {
   background-color: #ffffff;
 }
-
 .header__logo__image {
   width: 166px;
 }
-
 .header__localisation {
   background-color: #dddddd;
   padding: 15px;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-
 .header__heading {
   font-family: "Shrikhand";
   font-size: 25px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-
 .header__byline {
   margin-bottom: 40px;
 }
-
 .header__btn {
   border: 1px solid #9356DC;
   padding: 15px;
@@ -55,7 +181,9 @@
 
 .FoncBtn {
   width: 325px;
-  margin: 0 auto;
+  margin: 50px auto;
+}
+.FoncBtn__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,47 +198,80 @@
   -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
-
+.FoncBtn__icon {
+  margin-right: 25px;
+  color: #7e7e7e;
+}
+.FoncBtn__icon--color {
+  color: #9356DC;
+}
+.FoncBtn__titre {
+  margin-right: 25px;
+  font-weight: bold;
+}
 .FoncBtn__number {
   border: 5px solid #9356DC;
   border-radius: 50px;
-  padding: 2px;
+  color: #ffffff;
+  padding: 1px 6px 1px 5px;
   background-color: #9356DC;
 }
 
-.blocResto {
+.resto {
+  background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.resto__titre {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.resto__block {
   width: 335px;
   margin: 0 auto;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+.resto__card {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-
-.blocResto__image {
-  width: 335px;
+.resto__image {
+  width: 334px;
   height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-
-/* tout les link */
-a {
-  text-decoration: none;
+.resto__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
 }
-
-.footer {
-  background-color: #353535;
-  padding-left: 25px;
+.resto__text {
+  padding: 5px;
 }
-
-.footer__heading {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.resto__heading {
+  font-weight: bold;
 }
-/*# sourceMappingURL=style.css.map */
+.resto__icon {
+  color: #000000;
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.resto__Nouveau {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #99e2d0;
+  background-color: #99e2d0;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

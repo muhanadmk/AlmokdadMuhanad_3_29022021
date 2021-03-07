@@ -1,0 +1,117 @@
+// footer tous les pages
+.footer{
+    background-color: #353535;
+    &__block{
+        width: 335px;
+        margin: 0 auto;
+        color: #fff;
+    }
+    &__heading{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Shrikhand";
+    }
+    &__byline{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__contact{
+        margin-top: 10px;
+        color: #fff;
+    }
+    &__icon{
+        margin-top: 10px;
+        padding-right: 6px;
+        font-size: 12px;
+    }
+}
+
+// header de les pages mmenu
+.hedMmenu{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &__logo{
+        width: 175px;
+        height: 30px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    &__icon{
+        font-size: 20px;
+    }
+}
+.image{
+    width: 375px;
+    height: 260px;
+    object-fit: cover;
+    position: relative;
+}
+.hedBlock{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    border: 1px solid $Primaire-color;
+    border-radius: 30px;
+    background-color: $Primaire-color;
+    padding: 17px 0px 11px 15px;
+    &__hed{
+        font-family: "Shrikhand";
+        font-size: 25px;
+    }
+    &__like{
+        font-size: 24px;
+        padding: 0px 41px 0px 60px;
+    }
+}
+section{
+    background-color: $Primaire-color;
+    padding-bottom: 60px;
+}
+.repas{
+    width: 350px;
+    margin: 0 auto;
+    // &__block{
+    //     // margin-bottom: 20px;
+    // }
+    &__liste{
+        width: 345px;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    &__heading{
+        padding-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 200;
+        &--padTop{
+            padding-top: 40px;
+        }
+    }
+    &__line{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__titre{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    &__btn{ 
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        margin: 0 auto;
+        border: 1px solid $btn-color;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: $btn-color;
+        color: blanchedalmond;
+        font-weight: bold;
+    }
+}
