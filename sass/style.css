@@ -13,12 +13,20 @@ a {
 }
 
 .footer {
+<<<<<<< HEAD
   background-color: #2a2a2a;
+=======
+  background-color: #353535;
+>>>>>>> main
 }
 .footer__block {
   width: 335px;
   margin: 0 auto;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #fff;
+>>>>>>> main
 }
 .footer__heading {
   padding-top: 20px;
@@ -31,7 +39,11 @@ a {
 }
 .footer__contact {
   margin-top: 10px;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #fff;
+>>>>>>> main
 }
 .footer__icon {
   margin-top: 10px;
@@ -43,14 +55,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   width: 375px;
   margin: 0 auto;
+=======
+>>>>>>> main
   padding-top: 25px;
   padding-bottom: 25px;
 }
 .hedMmenu__logo {
   width: 175px;
   height: 30px;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
@@ -72,6 +88,24 @@ a {
   margin: 0 auto;
 }
 
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+.hedMmenu__icon {
+  font-size: 20px;
+}
+
+.image {
+  width: 375px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+>>>>>>> main
 .hedBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,9 +141,15 @@ section {
 .repas__liste {
   width: 345px;
   margin: 0 auto;
+<<<<<<< HEAD
   border: 1px solid white;
   border-radius: 15px;
   background-color: white;
+=======
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: #fff;
+>>>>>>> main
   padding: 10px;
   margin-bottom: 30px;
 }
@@ -148,7 +188,11 @@ section {
   padding: 15px;
   border-radius: 30px;
   background-color: #9356DC;
+<<<<<<< HEAD
   color: white;
+=======
+  color: blanchedalmond;
+>>>>>>> main
   font-weight: bold;
 }
 
@@ -217,12 +261,30 @@ section {
   margin-right: 25px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+.FoncBtn__icon {
+  margin-right: 25px;
+  color: #7e7e7e;
+}
+.FoncBtn__icon--color {
+  color: #9356DC;
+}
+.FoncBtn__titre {
+  margin-right: 25px;
+  font-weight: bold;
+}
+>>>>>>> main
 .FoncBtn__number {
   position: absolute;
   right: 311px;
   border: 5px solid #9356DC;
   border-radius: 50px;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #ffffff;
+>>>>>>> main
   padding: 1px 6px 1px 5px;
   background-color: #9356DC;
 }
@@ -243,10 +305,17 @@ section {
 .resto__card {
   position: relative;
   margin-bottom: 20px;
+<<<<<<< HEAD
   border: 1px solid white;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+=======
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+>>>>>>> main
 }
 .resto__image {
   width: 334px;
@@ -263,7 +332,11 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
   background-color: white;
+=======
+  background-color: #fff;
+>>>>>>> main
 }
 .resto__text {
   padding: 5px;
@@ -272,7 +345,11 @@ section {
   font-weight: bold;
 }
 .resto__icon {
+<<<<<<< HEAD
   color: black;
+=======
+  color: #000000;
+>>>>>>> main
   margin-right: 20px;
   font-size: 20px;
   margin-top: 10px;
@@ -281,7 +358,12 @@ section {
   position: absolute;
   top: 10px;
   right: 10px;
+<<<<<<< HEAD
   border: 1px soliddarken(#f6f6f6, 22%);
   background-color: #bebebe;
+=======
+  border: 1px solid #99e2d0;
+  background-color: #99e2d0;
+>>>>>>> main
   padding: 5px;
 }/*# sourceMappingURL=style.css.map */
