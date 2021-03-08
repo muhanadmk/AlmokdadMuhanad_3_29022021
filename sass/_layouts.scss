@@ -1,10 +1,10 @@
 // footer tous les pages
 .footer{
-    background-color: #353535;
+    background-color: darken($Primaire-color, 80%);
     &__block{
         width: 335px;
         margin: 0 auto;
-        color: #fff;
+        color:lighten($Primaire-color, 100%);
     }
     &__heading{
         padding-top: 20px;
@@ -17,7 +17,7 @@
     }
     &__contact{
         margin-top: 10px;
-        color: #fff;
+        color:lighten($Primaire-color, 100%);
     }
     &__icon{
         margin-top: 10px;
@@ -29,6 +29,8 @@
 // header de les pages mmenu
 .hedMmenu{
     display: flex;
+    width: 375px;
+    margin:  0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
     &__logo{
@@ -46,6 +48,10 @@
     height: 260px;
     object-fit: cover;
     position: relative;
+}
+.hedimg{
+    width: 375px;
+    margin: 0 auto;
 }
 .hedBlock{
     display: flex;
@@ -72,15 +78,12 @@ section{
 .repas{
     width: 350px;
     margin: 0 auto;
-    // &__block{
-    //     // margin-bottom: 20px;
-    // }
     &__liste{
         width: 345px;
         margin: 0 auto;
-        border: 1px solid #fff;
+        border: 1px solid lighten($Primaire-color, 100%);
         border-radius: 15px;
-        background-color: #fff;
+        background-color:lighten($Primaire-color, 100%);
         padding: 10px;
         margin-bottom: 30px;
     }
@@ -111,7 +114,7 @@ section{
         padding: 15px;
         border-radius: 30px;
         background-color: $btn-color;
-        color: blanchedalmond;
+        color: lighten($Primaire-color, 100%);
         font-weight: bold;
     }
 }

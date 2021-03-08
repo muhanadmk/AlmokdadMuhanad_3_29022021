@@ -4,7 +4,7 @@
     background-color: $Primaire-color;
     text-align: center;
     padding-bottom: 60px;
-    &__logo{ background-color:#ffffff ;
+    &__logo{ background-color:lighten($Primaire-color, 100%);
         &__image{
             width: 166px;
         }
@@ -12,7 +12,7 @@
     &__localisation{
         background-color: darken($Primaire-color, 10%);
         padding: 15px;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        @include boxshadow;
     }
     &__heading{
         font-family: "Shrikhand";
@@ -28,7 +28,7 @@
         padding: 15px;
         border-radius: 30px;
         background-color: $btn-color;
-        color: blanchedalmond;
+        color: lighten($Primaire-color, 100%);
     }
 }
 
@@ -44,14 +44,13 @@
         padding: 20px;
         margin-bottom: 20px;
         background-color: $Primaire-color;
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+        @include boxshadow;
+        position: relative;
     }
-    // &__i{
-    //     position: relative;
-    // }
+
     &__icon{
         margin-right: 25px;
-        color: #7e7e7e;
+        color:darken($Primaire-color, 50%);
         &--color{
             color: $btn-color;
         }
@@ -61,13 +60,11 @@
         font-weight: bold;
     }
     &__number{
-        // margin-right: 25px;
-        // position: absolute;
-        // left: 0;
-        // top: 0;
+        position: absolute;
+        right: 311px;
         border: 5px solid $btn-color;
         border-radius: 50px;
-        color: #ffffff;
+        color: lighten($Primaire-color, 100%);
         padding: 1px 6px 1px 5px;
         background-color: $btn-color;
     }
@@ -88,9 +85,9 @@
     &__card{
     position: relative;
     margin-bottom: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid lighten($Primaire-color, 100%);
     border-radius: 15px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    @include boxshadow;
     }
     &__image{
         width: 334px;
@@ -102,7 +99,7 @@
     &__border{
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: lighten($Primaire-color, 100%);
     }
     &__text{
         padding: 5px;
@@ -111,7 +108,7 @@
         font-weight: bold;
     }
     &__icon{
-        color: #000000;
+        color: darken($Primaire-color, 100%);
         margin-right: 20px;
         font-size: 20px;
         margin-top: 10px;
@@ -120,8 +117,8 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        border: 1px solid #99e2d0;
-        background-color: #99e2d0;
+        border: 1px soliddarken($Primaire-color, 22%);
+        background-color:darken($Primaire-color, 22%);
         padding: 5px;
     }
 }
