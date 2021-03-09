@@ -4,11 +4,7 @@
     background-color: $Primaire-color;
     text-align: center;
     padding-bottom: 60px;
-<<<<<<< HEAD
     &__logo{ background-color:lighten($Primaire-color, 100%);
-=======
-    &__logo{ background-color:#ffffff ;
->>>>>>> main
         &__image{
             width: 166px;
         }
@@ -33,6 +29,12 @@
         border-radius: 30px;
         background-color: $btn-color;
         color: lighten($Primaire-color, 100%);
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 4000ms;
+        &:hover {
+            transform: scale(1.15);
+        }
     }
 }
 
@@ -40,6 +42,10 @@
 .FoncBtn{
     width: 325px;
     margin: 50px auto;
+    background-color: lighten($Primaire-color, 100%);
+    &__heading{
+        margin-bottom: 30px;
+    }
     &__block{
         display: flex;
         align-items: center;
@@ -48,7 +54,6 @@
         padding: 20px;
         margin-bottom: 20px;
         background-color: $Primaire-color;
-<<<<<<< HEAD
         @include boxshadow;
         position: relative;
     }
@@ -56,16 +61,6 @@
     &__icon{
         margin-right: 25px;
         color:darken($Primaire-color, 50%);
-=======
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
-    }
-    // &__i{
-    //     position: relative;
-    // }
-    &__icon{
-        margin-right: 25px;
-        color: #7e7e7e;
->>>>>>> main
         &--color{
             color: $btn-color;
         }
@@ -75,21 +70,11 @@
         font-weight: bold;
     }
     &__number{
-<<<<<<< HEAD
         position: absolute;
         right: 311px;
         border: 5px solid $btn-color;
         border-radius: 50px;
         color: lighten($Primaire-color, 100%);
-=======
-        // margin-right: 25px;
-        // position: absolute;
-        // left: 0;
-        // top: 0;
-        border: 5px solid $btn-color;
-        border-radius: 50px;
-        color: #ffffff;
->>>>>>> main
         padding: 1px 6px 1px 5px;
         background-color: $btn-color;
     }
@@ -110,15 +95,9 @@
     &__card{
     position: relative;
     margin-bottom: 20px;
-<<<<<<< HEAD
     border: 1px solid lighten($Primaire-color, 100%);
     border-radius: 15px;
     @include boxshadow;
-=======
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
->>>>>>> main
     }
     &__image{
         width: 334px;
@@ -130,11 +109,7 @@
     &__border{
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     background-color: lighten($Primaire-color, 100%);
-=======
-    background-color: #fff;
->>>>>>> main
     }
     &__text{
         padding: 5px;
@@ -143,11 +118,7 @@
         font-weight: bold;
     }
     &__icon{
-<<<<<<< HEAD
         color: darken($Primaire-color, 100%);
-=======
-        color: #000000;
->>>>>>> main
         margin-right: 20px;
         font-size: 20px;
         margin-top: 10px;
@@ -156,13 +127,8 @@
         position: absolute;
         top: 10px;
         right: 10px;
-<<<<<<< HEAD
         border: 1px soliddarken($Primaire-color, 22%);
         background-color:darken($Primaire-color, 22%);
-=======
-        border: 1px solid #99e2d0;
-        background-color: #99e2d0;
->>>>>>> main
         padding: 5px;
     }
 }
