@@ -45,18 +45,18 @@ a {
   border-radius: 30px;
   background-color: #9356DC;
   color: white;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 4000ms;
-          transition-duration: 4000ms;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 2s, 2s, 4s;
+          transition-duration: 2s, 2s, 4s;
 }
 .header__btn:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  background-color: #ae80e5;
+  border-color: #ae80e5;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .FoncBtn {
@@ -325,22 +325,22 @@ a {
           justify-content: center;
   width: 195px;
   margin: 0 auto;
-  border: 1px solid #ae80e5;
+  border: 1px solid #9356DC;
   padding: 15px;
   border-radius: 30px;
-  background-color: #ae80e5;
+  background-color: #9356DC;
   color: white;
   font-weight: bold;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 2s, 2s, 4s;
+          transition-duration: 2s, 2s, 4s;
 }
 .repas__btn:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  background-color: #ae80e5;
+  border-color: #ae80e5;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=style.css.map */

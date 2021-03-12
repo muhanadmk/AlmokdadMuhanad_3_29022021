@@ -123,17 +123,18 @@
         justify-content: center;
         width: 195px;
         margin: 0 auto;
-        border: 1px solid lighten($btn-color, 10%);
+        border: 1px solid $btn-color;
         padding: 15px;
         border-radius: 30px;
-        background-color: lighten($btn-color, 10%) ;
+        background-color: $btn-color;
         color: lighten($Primaire-color, 100%);
         font-weight: bold;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 1000ms;
+        transition-property:background-color,border-color,box-shadow;
+        transition-duration: 2s,2s,4s;
         &:hover {
-            transform: scale(1.15);
+            background-color: lighten($btn-color, 10%);
+            border-color: lighten($btn-color, 10%);
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
         }
     }
 }
