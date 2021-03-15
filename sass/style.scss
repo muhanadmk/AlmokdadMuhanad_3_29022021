@@ -51,14 +51,25 @@ a{
         padding: 15px;
         border-radius: 30px;
         background-color: $btn-color;
-        color: lighten($Primaire-color, 100%);
-        transition-property:background-color,border-color,box-shadow;
-        transition-duration: 2s,2s,4s;
+        color: lighten($btn-color,100%);
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity .3s;
         &:hover {
-            background-color: lighten($btn-color, 10%);
-            border-color: lighten($btn-color, 10%);
-           @include boxshadow;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            opacity: .8;
         }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
     }
 }
 
@@ -67,6 +78,7 @@ a{
     max-width: 325px;
     margin: 50px auto;
     background-color: lighten($Primaire-color, 100%);
+            
     &__heading{
         margin-bottom: 30px;
     }
@@ -80,6 +92,12 @@ a{
         background-color: $Primaire-color;
         @include boxshadow;
         position: relative;
+        @media (max-width: 374px) {
+            width: 280px;
+            padding: 20px 0px 20px 20px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
 
     &__icon{
@@ -101,6 +119,10 @@ a{
         color: lighten($Primaire-color, 100%);
         padding: 1px 6px 1px 5px;
         background-color: $btn-color;
+        @media (max-width: 374px) {
+            right: 265px;
+        }
+        
     }
 }
 // les carte de resro
@@ -127,13 +149,15 @@ a{
     &__image{
         width: 334px;
         height: 175px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         @media (max-width: 374px) {
             width: 320px;
             height: 175px;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
         }
     }
     &__border{
