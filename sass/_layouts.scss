@@ -136,40 +136,15 @@
     margin: 0 auto;
     &__entree{
         opacity: 1;
-        -webkit-animation-name: scrol;
-                animation-name: scrol;
-        -webkit-animation-duration: .75s;
-                animation-duration: .75s;
-        -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
+        animation: scrol .75s ease-in-out 0s 1;
     }
     &__plate{
         opacity: 1;
-        -webkit-animation-name: scrol;
-                animation-name: scrol;
-        -webkit-animation-duration: 0.75s;
-                animation-duration: 0.75s;
-        -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
-        -webkit-animation-delay: 1s;
-                animation-delay: 1s;
+        animation: scrol .75s ease-in-out 1s 1;
     }
     &__dessert{
         opacity: 1;
-        -webkit-animation-name: scrol;
-                animation-name: scrol;
-        -webkit-animation-duration: .75s;
-                animation-duration: .75s;
-        -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
-        -webkit-animation-delay: 1.75s;
-                animation-delay: 1.7s;
+        animation: scrol .75s ease-in-out 1.75s 1;
     }
     &__liste{
         display: flex;
@@ -210,7 +185,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: 277px;
+        width: 277px;
     }
     &__animi{
         display: flex;

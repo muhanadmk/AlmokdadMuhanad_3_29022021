@@ -7,7 +7,7 @@ $btn-color:#9356DC;
 @mixin boxshadow {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
+@import "./layouts";
 *{
     margin: 0;
     padding: 0;
@@ -187,5 +187,40 @@ a{
         padding: 5px;
     }
 }
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
 
-@import "./layouts";
+@keyframes tourne{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+// Spinner 
+.spinner {
+    opacity: 0;
+    background: $Primaire-color;
+    color: #f6f6f6;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: hide 3s ease-in-out 0s 1;
+    &__text{
+        margin: 200px auto;
+        width: 150px;
+        height: 150px;
+        border: 2px solid $btn-color;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: tourne .4s ease-in-out 0s infinite;
+    }
+}
