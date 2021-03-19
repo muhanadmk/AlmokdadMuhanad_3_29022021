@@ -112,20 +112,20 @@
             font-size: 24px;
         }
     }
-@-webkit-keyframes oo{
+@-webkit-keyframes scrol{
     0%{
-        opacity: 0;
+        opacity: 1;
     }
     100%{
-        opacity: 1;
+        opacity: 0.50;
     }
 }
-@keyframes oo{
+@keyframes scrol{
     0%{
-        opacity: 0;
+        opacity: 1;
     }
     100%{
-        opacity: 1;
+        opacity: 0.70;
     }
 }
 .menu{
@@ -135,10 +135,41 @@
     max-width: 350px;
     margin: 0 auto;
     &__entree{
-        .oo{
-            -webkit-animation: oo 2s ease-in-out;
-                    animation: oo 2s ease-in-out;
-        }
+        opacity: 1;
+        -webkit-animation-name: scrol;
+                animation-name: scrol;
+        -webkit-animation-duration: .75s;
+                animation-duration: .75s;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    &__plate{
+        opacity: 1;
+        -webkit-animation-name: scrol;
+                animation-name: scrol;
+        -webkit-animation-duration: 0.75s;
+                animation-duration: 0.75s;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+    }
+    &__dessert{
+        opacity: 1;
+        -webkit-animation-name: scrol;
+                animation-name: scrol;
+        -webkit-animation-duration: .75s;
+                animation-duration: .75s;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-delay: 1.75s;
+                animation-delay: 1.7s;
     }
     &__liste{
         display: flex;
