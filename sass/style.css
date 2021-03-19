@@ -271,9 +271,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   top: 300px;
   border: 1px solid #f6f6f6;
@@ -290,23 +289,39 @@ a {
   font-family: "Shrikhand", sans-serif;
   font-size: 25px;
 }
-.hedBlock__like1 {
-  font-size: 24px;
-  margin-right: 30px;
-}
-.hedBlock__like1:hover .hedBlock .like2 {
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  font-size: 24px;
-  color: #ff0000;
+.hedBlock__coure:hover .hedBlock__like2 {
+  -webkit-transform: scale(0.86);
+          transform: scale(0.86);
+  color: #9356DC;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+  transition: -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
 }
 .hedBlock__like2 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  font-size: 24px;
+  margin-right: 1px;
+}
+@media (max-width: 374px) {
+  .hedBlock__like2 {
+    margin-right: 19px;
+    margin-top: 1px;
+  }
+}
+.hedBlock__like2--accueil {
+  margin-right: 26px;
+  margin-top: 6px;
+}
+.hedBlock__like1 {
   position: absolute;
-  bottom: 43px;
+  bottom: 40px;
   height: 0px;
-  right: 0px;
-  margin-right: 30px;
-  font-size: 0px;
+  right: 26px;
+  font-size: 24px;
 }
 
 @-webkit-keyframes oo {
