@@ -194,6 +194,7 @@ a{
     }
     100%{
         opacity: 0.5;
+        height: 0;
     }
 }
 @keyframes hide{
@@ -216,6 +217,7 @@ a{
 @keyframes tourne{
     to{
         transform: rotate(360deg);
+        opacity: 1;
     }
 }
 @-webkit-keyframes position{
@@ -244,13 +246,15 @@ a{
     -webkit-animation: hide 3s forwards 0s 1;
             animation: hide 3s forwards 0s 1;
     &__text{
+        opacity: 0;
         margin: 200px auto;
         width: 150px;
         height: 150px;
         border: 2px solid $btn-color;
         border-radius: 50%;
         border-top-color: transparent;
-        -webkit-animation: tourne 1s forwards 0s infinite;
-                animation: tourne 1s forwards 0s infinite;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        -webkit-animation: tourne .5s linear 0s 8;
+                animation: tourne .5s linear 0s 8;
     }
 }

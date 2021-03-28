@@ -163,11 +163,11 @@
                 opacity: 1 !important;
                 width: 60px;
                 transition: all .7s ease-in-out ;
-            }
-            .repas__icon--tourne {
-                transform: rotate(-20deg);
-                transition: transform 1s ease-in-out;
+                &--tourne {
+                    transform: rotate(-20deg);
+                    transition: transform 1s ease-in-out;
                 }
+            }
             }    
         }          
     &__heading{
@@ -207,14 +207,14 @@
         background-color:darken($Primaire-color, 20%);
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
-    }    
-    &__icon--tourne{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: lighten($Primaire-color, 100%);
-        transform: rotate(200deg);
+        &--tourne{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: lighten($Primaire-color, 100%);
+            transform: rotate(200deg);
         }
+    }    
     &__prix{
         display: flex;
         justify-content: center;
