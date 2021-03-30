@@ -1,27 +1,4 @@
-
-// varibles:
-$Primaire-color:#f6f6f6;
-$Secondaire-color:#FF79DA;
-$btn-color:#9356DC;
-
-@mixin boxshadow {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-@import "./layouts";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-/* tout les link */
-a{
-    text-decoration: none;
-    color: #000000;
-}
-
 // header-page-Accueil
-
 .header{
     background-color: $Primaire-color;
     margin-top: 25px;
@@ -45,30 +22,6 @@ a{
     }
     &__byline{
         margin-bottom: 40px;
-    }
-    &__btn{
-        border: 1px solid $btn-color;
-        padding: 15px;
-        border-radius: 30px;
-        background-color: $btn-color;
-        color: lighten($btn-color,100%);
-        position: relative;
-        z-index: 1;
-        opacity: 1;
-        transition: opacity .3s;
-        &:hover {
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-            opacity: .9;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-        } 
     }
 }
 
@@ -187,50 +140,6 @@ a{
         padding: 5px;
     }
 }
-@-webkit-keyframes hide{
-    0%{
-        opacity: 1;
-        
-    }
-    100%{
-        opacity: 0.5;
-        height: 0;
-    }
-}
-@keyframes hide{
-    0%{
-        opacity: 1;
-       
-    }
-    100%{
-        opacity: 0.5;
-        height: 0;
-    }
-}
-
-@-webkit-keyframes tourne{
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes tourne{
-    to{
-        transform: rotate(360deg);
-        opacity: 1;
-    }
-}
-@-webkit-keyframes position{
-    to{
-       position: relative;
-    }
-}
-@keyframes position{
-    to{
-       position: relative;
-    }
-}
-
 // Spinner 
 
 .spinner {

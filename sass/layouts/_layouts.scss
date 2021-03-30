@@ -1,6 +1,7 @@
 // footer tous les pages
 .footer{
     background-color: darken($Primaire-color, 80%);
+    padding-bottom: 30px;
     &__block{
         max-width: 335px;
         margin: 0 auto;
@@ -66,7 +67,7 @@
     width: 375px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     top: 300px;
     border: 1px solid $Primaire-color;
@@ -83,7 +84,7 @@
     &__coure{
         &:hover{
             .hedBlock__like2{
-                transform: scale(.815);
+                transform: scale(.83);
                 color: $btn-color;
                 transition: transform 3s ease-in-out;
             } 
@@ -93,7 +94,7 @@
         transform: scale(0);
         transform-origin: center bottom;
         font-size: 24px;
-        margin-right: 1px;
+        margin-right: 26px;
         @media (max-width: 374px) {
             margin-right: 19px;
             margin-top: 1px;
@@ -111,22 +112,6 @@
             font-size: 24px;
         }
     }
-@-webkit-keyframes scrol{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.50;
-    }
-}
-@keyframes scrol{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.70;
-    }
-}
 .menu{
     background-color: $Primaire-color;
     padding-bottom: 60px;
@@ -204,7 +189,7 @@
         opacity: 0 !important;
         width: 0px;
         height: 65px;
-        background-color:darken($Primaire-color, 20%);
+        background-color:darken($Primaire-color, 25%);
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         &--tourne{
