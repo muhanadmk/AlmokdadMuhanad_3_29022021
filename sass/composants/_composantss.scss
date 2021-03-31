@@ -9,7 +9,7 @@
         opacity: 1;
         transition: opacity .3s;
         &:hover {
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            @include boxshadow;
             opacity: .9;
         }
         &::after {
@@ -70,16 +70,7 @@
         height: 150px;
     }
 }
-@-webkit-keyframes position{
-    to{
-       position: relative;
-    }
-}
-@keyframes position{
-    to{
-       position: relative;
-    }
-}
+
 @-webkit-keyframes scrol{
     0%{
         opacity: 1;
@@ -105,6 +96,7 @@
         background: $Primaire-color;
         color: #f6f6f6;
         position: fixed;
+        z-index: 9999;
         top: 0;
         left: 0;
         width: 100%;
