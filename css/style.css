@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* tout les link */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .btn__Principal {
   border: 1px solid #9356DC;
   padding: 15px;
@@ -115,19 +128,6 @@
   border-top-color: transparent;
   -webkit-animation: tourne 0.5s linear 0s 6;
   animation: tourne 0.5s linear 0s 6;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-/* tout les link */
-a {
-  text-decoration: none;
-  color: #000000;
 }
 
 .header {
@@ -270,7 +270,7 @@ a {
   position: absolute;
   top: 10px;
   right: 10px;
-  border: 1px solid darken #f6f6f6, 22%;
+  border: 1px solid #bebebe;
   background-color: #bebebe;
   padding: 5px;
 }
