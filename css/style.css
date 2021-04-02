@@ -12,28 +12,15 @@ a {
 }
 
 .btn__Principal {
-  border: 1px solid #9356DC;
+  border: 1px solid linear-gradient(90deg, #eb86e0 0%, #b074e1 100%);
   padding: 15px;
   border-radius: 30px;
-  background-color: #9356DC;
+  background: linear-gradient(90deg, #eb86e0 0%, #b074e1 100%);
   color: white;
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-  transition: opacity 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 .btn__Principal:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-  opacity: 0.9;
-}
-.btn__Principal::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
 }
 
 @-webkit-keyframes hide {
@@ -82,18 +69,26 @@ a {
 }
 @-webkit-keyframes scrol {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 @keyframes scrol {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0.7;
+    opacity: 1;
+  }
+}
+@keyframes icon {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60px;
   }
 }
 .spine__spinner {
@@ -356,7 +351,7 @@ a {
 }
 .hedBlock__coure:hover .hedBlock__like2 {
   transform: scale(0.83);
-  color: #9356DC;
+  color: #a978e3;
   transition: transform 3s ease-in-out;
 }
 .hedBlock__like2 {
@@ -393,19 +388,19 @@ a {
   margin: 0 auto;
 }
 .repas__entree {
-  opacity: 1;
-  -webkit-animation: scrol 1.5s ease-in-out 0s 1;
-  animation: scrol 1.5s ease-in-out 0s 1;
+  opacity: 0;
+  -webkit-animation: scrol 1.5s forwards 1s 1;
+  animation: scrol 1.5s forwards 1s 1;
 }
 .repas__plate {
-  opacity: 1;
-  -webkit-animation: scrol 1.5s ease-in-out 1.8s 1;
-  animation: scrol 1.5s ease-in-out 1.8s 1;
+  opacity: 0;
+  -webkit-animation: scrol 1.5s forwards 2.8s 1;
+  animation: scrol 1.5s forwards 2.8s 1;
 }
 .repas__dessert {
-  opacity: 1;
-  -webkit-animation: scrol 1.5s ease-in-out 3.5s 1;
-  animation: scrol 1.5s ease-in-out 3.5s 1;
+  opacity: 0;
+  -webkit-animation: scrol 1.5s forwards 4.5s 1;
+  animation: scrol 1.5s forwards 4.5s 1;
 }
 .repas__liste {
   display: flex;
@@ -417,14 +412,26 @@ a {
   background-color: white;
   margin-bottom: 30px;
 }
+.repas__liste .repas__icon {
+  transition-duration: 0.7s;
+}
+.repas__liste .repas__icon--tourne {
+  transition-duration: 0.7s;
+}
 .repas__liste:hover .repas__icon {
-  opacity: 1 !important;
   width: 60px;
-  transition: all 0.7s ease-in-out;
+  animation: icon 0.7s ease-in-out 0s;
 }
 .repas__liste:hover .repas__icon--tourne {
   transform: rotate(-20deg);
   transition: transform 1s ease-in-out;
+}
+.repas__border {
+  width: 40px;
+  height: 4px;
+  margin-bottom: 12px;
+  margin-left: 11px;
+  background-color: #99e2d0;
 }
 .repas__heading {
   padding-top: 20px;
@@ -457,19 +464,20 @@ a {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  opacity: 0 !important;
   width: 0px;
   height: 65px;
-  background-color: #b6b6b6;
+  background-color: #99e2d0;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  overflow: hidden;
 }
 .repas__icon--tourne {
+  transition-duration: 3s;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  transform: rotate(200deg);
+  transform: rotate(100deg);
 }
 .repas__prix {
   display: flex;

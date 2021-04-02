@@ -85,7 +85,7 @@
         &:hover{
             .hedBlock__like2{
                 transform: scale(.83);
-                color: $btn-color;
+                color: lighten($btn-color,8%);
                 transition: transform 3s ease-in-out;
             } 
         }
@@ -120,19 +120,19 @@
     max-width: 350px;
     margin: 0 auto;
     &__entree{
-        opacity: 1;
-        -webkit-animation: scrol 1.5s ease-in-out 0s 1;
-                animation: scrol 1.5s ease-in-out 0s 1;
+        opacity: 0;
+        -webkit-animation: scrol 1.5s forwards 1s 1;
+                animation: scrol 1.5s forwards 1s 1;
     }
     &__plate{
-        opacity: 1;
-        -webkit-animation: scrol 1.5s ease-in-out 1.8s 1;
-                animation: scrol 1.5s ease-in-out 1.8s 1;
+        opacity: 0;
+        -webkit-animation: scrol 1.5s forwards 2.8s 1;
+                animation: scrol 1.5s forwards 2.8s 1;
     }
     &__dessert{
-        opacity: 1;
-        -webkit-animation: scrol 1.5s ease-in-out 3.5s 1;
-                animation: scrol 1.5s ease-in-out 3.5s 1;
+        opacity: 0;
+        -webkit-animation: scrol 1.5s forwards 4.5s 1;
+                animation: scrol 1.5s forwards 4.5s 1;
     }
     &__liste{
         display: flex;
@@ -143,18 +143,31 @@
         border-radius: 15px;
         background-color:lighten($Primaire-color, 100%);
         margin-bottom:30px;
+        .repas__icon{
+            transition-duration: 0.7s;
+            &--tourne{
+                transition-duration: 0.7s;
+            }
+        }
+        
         &:hover{
-            .repas__icon {
-                opacity: 1 !important;
+            .repas__icon{
                 width: 60px;
-                transition: all .7s ease-in-out ;
+                animation: icon 0.7s ease-in-out 0s;
                 &--tourne {
                     transform: rotate(-20deg);
                     transition: transform 1s ease-in-out;
                 }
             }
             }    
-        }          
+        }  
+    &__border{
+        width: 40px;
+        height: 4px;
+        margin-bottom: 12px;
+        margin-left: 11px;
+        background-color: #99e2d0;
+    }            
     &__heading{
         padding-top: 20px;
         margin-bottom: 10px;
@@ -186,18 +199,19 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        opacity: 0 !important;
         width: 0px;
         height: 65px;
-        background-color:darken($Primaire-color, 25%);
+        background-color:#99e2d0;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
+        overflow: hidden;
         &--tourne{
+            transition-duration: 3s;
             display: flex;
             justify-content: center;
             align-items: center;
             color: lighten($Primaire-color, 100%);
-            transform: rotate(200deg);
+            transform: rotate(100deg);
         }
     }    
     &__prix{
