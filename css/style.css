@@ -17,10 +17,10 @@ a {
   border-radius: 30px;
   background: linear-gradient(90deg, #eb86e0 0%, #b074e1 100%);
   color: white;
-  transition: box-shadow 0.3s;
 }
 .btn__Principal:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.4s;
 }
 
 @-webkit-keyframes hide {
