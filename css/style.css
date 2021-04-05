@@ -12,7 +12,7 @@ a {
 }
 
 .btn__Principal {
-  border: 1px solid linear-gradient(90deg, #eb86e0 0%, #b074e1 100%);
+  border: 1px solid #eb86e0;
   padding: 15px;
   border-radius: 40px;
   background: linear-gradient(90deg, #eb86e0 0%, #b074e1 100%);
